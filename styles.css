@@ -1,0 +1,101 @@
+body {
+  text-align: center;
+  background: white;
+  background: -webkit-linear-gradient(left top, white, black);
+  background: -o-linear-gradient(left top, white, black);
+  background: -moz-linear-gradient(left top, white, black);
+  background: linear-gradient(left top, white, black);
+}
+
+#b-one {background-color: #330044;}
+
+#s-two, #b-two {top: -393px;animation-delay: -.5s;}
+#b-two {background-color: #220066;}
+
+#s-three, #b-three {top: -786px;animation-delay: -1s;}
+#b-three {background-color: #1133cc;}
+
+#s-four, #b-four {top: -1179px;animation-delay: -1.5s;}
+#b-four {background-color: #33dd00;}
+
+#s-five, #b-five {top: -1572px;animation-delay: -2s;}
+#b-five {background-color: #ffda21;}
+
+#s-six, #b-six {top: -1965px;animation-delay: -2.5s;}
+#b-six {background-color: #ff6622;}
+
+#s-seven, #b-seven {top: -2358px;animation-delay: -3s;}
+#b-seven {background-color: #d10000;}
+
+.ball {
+  display: inline-block;
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin-top: -15px;
+  border-radius: 100px;
+  background-color: black;
+  transform-origin: 50% -200%;
+  -ms-transform-origin: 50% -200%;
+  -webkit-transform-origin: 50% -200%;
+  animation: pendulum 4s ease-in-out infinite alternate;
+  -webkit-animation: pendulum 4s ease-in-out infinite alternate;
+  -moz-animation: pendulum 4s ease-in-out infinite alternate;
+  -o-animation: pendulum 4s ease-in-out infinite alternate;
+}
+
+.stick {
+  display: inline-block;
+  position: relative;
+  height: 300px;
+  width: 2px;
+  border-radius: 8px;
+  background-color: lightgrey;
+  transform-origin: top;
+  -ms-transform-origin: top;
+  -webkit-transform-origin: top;
+  animation: stick 4s ease-in-out infinite alternate;
+  -webkit-animation: stick 4s ease-in-out infinite alternate;
+  -moz-animation: stick 4s ease-in-out infinite alternate;
+  -o-animation: stick 4s ease-in-out infinite alternate;
+}
+
+@keyframes pendulum {
+  from {transform: rotateZ(70deg);}
+  to {transform: rotateZ(-70deg);}
+}
+
+@-webkit-keyframes pendulum {
+  from {-webkit-transform: rotateZ(70deg);}
+  to {-webkit-transform: rotateZ(-70deg);}
+}
+
+@-ms-keyframes pendulum {
+  from {-ms-transform: rotateZ(70deg);}
+  to {-ms-transform: rotateZ(-70deg);}
+}
+
+@-o-keyframes pendulum {
+  from {-o-transform: rotateZ(70deg);}
+  to {-o-transform: rotateZ(-70deg);}
+}
+
+@keyframes stick {
+  from {transform: rotateZ(53deg);}
+  to {transform: rotateZ(-53deg);}
+}
+
+@-webkit-keyframes stick {
+  from {-webkit-transform: rotateZ(53deg);}
+  to {-webkit-transform: rotateZ(-53deg);}
+}
+
+@-ms-keyframes stick {
+  from {-ms-transform: rotateZ(53deg);}
+  to {-ms-transform: rotateZ(-53deg);}
+}
+
+@-o-keyframes stick {
+  from {-o-transform: rotateZ(53deg);}
+  to {-o-transform: rotateZ(-53deg);}
+}
